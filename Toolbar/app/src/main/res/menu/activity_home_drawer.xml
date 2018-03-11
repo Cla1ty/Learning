@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                                               ~
+  ~                         Created by Dwi Ariyanto (creatures99@gmail.com)                       ~
+  ~                             Copyright © 2018. All rights reserved.                            ~
+  ~                                                                                               ~
+  ~                                                                                               ~
+  ~ Created on:                                                                                ~
+  ~ Wednesday, January 24, 2018 at 23:03                                                          ~
+  ~                                                                                               ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/order"
+            android:title="Order" />
+        <item
+            android:id="@+id/history"
+            android:title="History" />
+        <item
+            android:id="@+id/account"
+            android:title="Account" />
+        <item
+            android:id="@+id/change_operator"
+            android:title="Change Operator" />
+    </group>
+</menu>
