@@ -14,7 +14,6 @@ class BlankFragment : Fragment()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View?
     {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_blank, container, false)
     }
 
@@ -23,11 +22,12 @@ class BlankFragment : Fragment()
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
 
-        menu()
+        buttonMenu()
+        buttonMenuRes()
     }
 
     private var menu = true
-    private fun menu()
+    private fun buttonMenu()
     {
         btn1.setOnClickListener {
             menu = !menu
@@ -35,9 +35,27 @@ class BlankFragment : Fragment()
         }
     }
 
+    private var menuRes = R.menu.search
+    private fun buttonMenuRes()
+    {
+        btn2.setOnClickListener {
+            menuRes = when (menuRes)
+            {
+                0 -> R.menu.search
+                else -> 0
+            }
+            activity.invalidateOptionsMenu()
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?)
     {
-        inflater?.inflate(R.menu.search, menu)
+        menu?.clear()
+
+        if (menuRes != 0)
+        {
+            inflater?.inflate(menuRes, menu)
+        }
     }
 
 } // Required empty public constructor
