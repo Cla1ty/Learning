@@ -47,8 +47,8 @@ class ToolbarActivity : AppCompatActivity()
             it.addOnMenuVisibilityListener {
                 Log.i("TAG", "Menu visible $it")
             }
-            it.setIcon(R.drawable.ic_launcher_foreground)
-            it.setLogo(R.drawable.ic_launcher_foreground)
+//            it.setIcon(R.drawable.ic_launcher_foreground)
+//            it.setLogo(R.drawable.ic_launcher_foreground)
             it.setCustomView(R.layout.context_menu)
         }
     }

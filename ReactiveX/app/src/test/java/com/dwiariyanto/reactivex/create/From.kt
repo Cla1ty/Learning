@@ -16,6 +16,7 @@ class From
     {
         Observable
                 .fromArray("Sven", "Invoker", "Line")
+                .delay()
                 .execute()
     }
 }

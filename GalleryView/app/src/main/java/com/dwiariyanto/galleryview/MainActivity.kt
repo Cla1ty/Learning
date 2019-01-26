@@ -14,7 +14,7 @@ class MainActivity : PermissionActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.gallery_activity)
 
         galleryToolbar = findViewById(R.id.galleryToolbar)
 
